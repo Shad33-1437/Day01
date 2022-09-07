@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <!-- describing meta for the web-page -->
+        <meta name="description" content="Html practice project">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+
+        <!-- Setting web-page's favicon -->
+        <link rel="icon" type="image/x-icon" href="/Day01/html5-brands.svg">
+
+        <!-- adding font from google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Quicksand:wght@300;400&display=swap"
+        rel="stylesheet">
+
+        <title>
+            HTML5 Day01
+        </title>
+
+        <!-- writing in-line css for styling some of the elements ~ basic styles -->
+        <style>
+            body 
+                {
+                    background-color: #2C394B;
+                    color: #EDEDED;
+                    text-align: center;
+                    font-family: 'Quicksand', sans-serif;
+                    margin-left:10%;
+                    margin-right: 10%;
+                }
+                a {
+                    color: #916BBF;
+                    background-color: transparent;
+                    text-decoration: none;
+                    font-family: 'Quicksand', sans-serif;
+                    }
+
+        </style>
+
+    </head>
+    <body>
+        <h1>HTML5</h1>
+        <div>
+            <img src="https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/686515/retina_1708x683_01-HTML5_CM-8384522cf54d2bf230364f4a290605a1.png" 
+            alt="" style="width: 80%;">
+        </div>
+            <p>
+                The term HTML5 is essentially a buzzword that refers to a set of modern web technologies.
+                This includes the <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML"> HTML</a>
+                Living Standard, along with <a href="https://developer.mozilla.org/en-US/docs/Glossary/JavaScript">JavaScript</a>
+                APIs to enhance storage, 
+                multimedia, and hardware access.
+            </p>
+
+            <p>
+                You may sometimes hear about "new HTML5 elements", 
+                or find HTML5 described as a new version of HTML. 
+                HTML5 was the successor to previous HTML versions 
+                and introduced new elements and capabilities to 
+                the language on top of the previous version, HTML 
+                4.01, as well as improving or removing some existing 
+                functionality. However, as a Living Standard HTML now 
+                has no version. The up-to-date specification can be 
+                found at<a href="https://html.spec.whatwg.org/" target="_blank">  <!--Opening the link in new window-->
+                    https://html.spec.whatwg.org/</a>
+
+            </p>
+            <hr>
+
+        <h2>HTML Images</h2>
+            <p>
+                HTML images are pictures used in web pages. with
+                the help of HTML Tags provided by the html we can embed 
+                images in our webpages.
+            </p>
+
+        <h3 style="text-decoration: underline;">HTML Image Syntax</h3>
+            <p>
+                The HTML <i>&lt;img&gt;</i> tag is used to embed an image in a web page.
+            </p>
+            <p>
+                Images are not technically inserted into a web page; images are linked 
+                to web pages. The <i>&lt;img&gt;</i> tag creates a holding space for the referenced image.
+            </p>
+
+        <!-- inline styling done for displaying syntax -->
+ 
+        color:#EDEDED; 
+        margin-left: 15%;
+        margin-right: 15%;
+        border-radius: 10px;
+        padding: 1%;
+        ">
+            &lt;img src="url" alt="alternatetext"&gt;
+        </p>
+        <div style="
+        text-align: left;
+        ">
+            <h3 
+            style="text-decoration: underline;
+            ">
+            Imgae tag and its attributes</h3>
+
+           <ul style="list-style-type: square;">
+                <li>
+                    Use the HTML &lt;img&gt; element to define an image
+                </li>
+                <li>
+                    Use the HTML src attribute to define the URL of the image
+                </li>
+                <li>
+                    Use the HTML alt attribute to define an alternate text for 
+                    an image, if it cannot be displayed
+                </li>
+                <li>
+                    Use the HTML width and height attributes or the 
+                    CSS width and height properties to define the 
+                    size of the image
+                    <ol type="I">
+                        <li>
+                            <i>width</i> determines the width of image. Use in % for responsive
+                            layout.
+                        </li>
+                        <li>
+                            <i>height</i> determines the height of image. Use relative % for responsive
+                            layout.
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    Use the CSS float property to let the image float to the left or to the right
+                </li>
+           </ul>
+        </div>
+
+
+        <div style="text-align: left;">
+            <h3 style="text-decoration:underline;">
+                Image Tag description
+            </h3>
+            <table 
+            style="width: 70%;
+            border: 1px solid #8E05C2;
+            border-radius: 6px;
+            ">
+                <tr style="background-color: #8E05C2;">
+                    <th style="width: 30%;">Tag</th>
+                    <th style="width: 70%;">description</th>
+                </tr>
+                <tr">
+                    <td>&lt;img&gt;</td>
+                    <td>Defines an image</td>
+                </tr>
+                <tr>
+                    <td>&lt;map&gt;</td>
+                    <td>Defines an image map</td>
+                </tr>
+                <tr>
+                    <td>&lt;area&gt;</td>
+                    <td>Defines a clickable area inside an image map</td>
+                </tr>
+                <tr>
+                    <td>&lt;picture&gt;</td>
+                    <td>Defines a container for multiple image resources
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+        <!-- this iframe displays other html page in the frame -->
+        <div>
+            <h2>Iframe referenced: this html page</h2>
+
+            <iframe src="" name="image_frame" height="300px" width="100%" title="IMAGE TAG"></iframe>
+
+            <p>
+                <a href="/Day01/Day01.html" target="image_frame">HTML Image TAG</a>
+            </p>
+        </div>
+       
+
+
+    </body>
+
+    <footer style="background-color: #3E065F;">
+        <div style="width: 100%;
+        height: 20vh;
+        margin: 0%;
+        ">
+
+        </div>
+
+    </footer>
+</html>
